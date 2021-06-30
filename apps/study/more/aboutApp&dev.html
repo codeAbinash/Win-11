@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About developer</title>
+    <link rel="stylesheet" href="../common.css">
+    <script src="../common.js"></script>
+</head>
+<body onload="loaded()">
+<script>
+    function loaded(){
+        document.body.style.opacity="1";
+    }
+</script>
+<script src="dark.js"></script>
+<style>
+body{
+    opacity: 0;
+    background: var(--theme-color);
+}
+</style>
+    <header>
+        <img src="../main/back.svg" alt="back" onclick="goBack()">
+        <h1>About developer</h1>
+    </header>
+    <div class="content">
+        <img src="background.jpg" class="logo" alt="checkForUpdate" id="bg">
+        <img src="cover.png" alt="me" id="me">
+        <h1 class="appName">Abinash</h1>
+        <p class="version">darkrosesoftware@gmail.com<br>facebook : <a href="http:/facebook.com/ Abinash.Dark.Rose" style="color:dodgerblue">Abinash.Dark.Rose</a> </p>
+        <a href="mailto: darkrosesoftware@gmail.com?subject=Email from Study Application&body=Hello,  ">
+            <button>Send Email</button>
+        </a>
+    </div>
+</body>
+<style>
+#bg{
+    width: 90%;
+    border-radius: 10px;
+    margin-top:10px;
+}
+#me{
+    width: 50%;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: -40%;
+    border: 5px solid var(--theme-color);
+    margin-left: 25%;
+}
+.appName{
+    margin-top: 25%;
+}
+
+</style>
+<script src="../dark.js"></script>
+<link rel="stylesheet" href="common.css">
+</html>

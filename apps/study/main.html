@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" onload="alert(123)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <link rel="stylesheet" href="common.css">
+    <script src="common.js"></script>
+</head>
+<body onload="loaded()" onclick="">
+<script>
+    function loaded(){
+        document.body.style.opacity="1";
+    }
+</script>
+<script src="dark.js"></script>
+<style>
+body{
+    opacity: 0;
+}
+</style>
+    <div class="main">
+        <div class="d1">    
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+            <!-- <header>
+                <h1 class="heading">Study</h1>
+                <img class="history" src="main/history.svg" alt="">
+            </header> -->
+            <div class="glass">
+                <h2>Total</h2>
+                <h1 class="todayTime"></h1>
+            </div>
+            <p class="quote">Motivating</p>
+            
+            <button onclick="startReading()">start reading</button>
+            
+            <div class="glass2">
+                <div class="sub1 sub" >
+                    <p>Subject 1</p>
+                    <div class="container">
+                        <div class="content" id="range1"></div>
+                    </div>
+                </div>
+                <div class="sub2 sub">
+                    <p>Subject 2</p>
+                    <div class="container">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="sub3 sub">
+                    <p>Subject 3</p>
+                    <div class="container">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="sub4 sub">
+                    <p>Subject 4</p>
+                    <div class="container">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="sub5 sub">
+                    <p>Subject 5</p>
+                    <div class="container">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="sub6 sub">
+                    <p>Subject 6</p>
+                    <div class="container">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="sub7 sub">
+                    <p>Subject 7</p>
+                    <div class="container">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="sub8 sub">
+                    <p>Subject 8</p>
+                    <div class="container">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="sub9 sub">
+                    <p>Subject 9</p>
+                    <div class="container">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="sub10 sub">
+                    <p>Subject 10</p>
+                    <div class="container">
+                        <div class="content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+<div class="d2">
+    <div class="none"></div>
+    <div class="subWin">
+        <h1>Select Subject</h1>
+        <p>Mathematics</p>
+        <p>Physics</p>
+        <p>Chemistry</p>
+        <p>Biology</p>
+        <p>Computer Science</p>
+        <p>Computer Science</p>
+        <p>Computer Science</p>
+        <p>Computer Science</p>
+        <p>Computer Science</p>
+    </div>
+    <div class="musicWin">
+        <audio id="m1">
+            <source src="music/1.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+          </audio>
+        <div class="content">
+            <h1>Music for Concentration</h1>
+            <p id="musicName">Waltz of flowerWaltz of flower</p>
+            <h2 id="musicDesc">Lorem ipsum dolor sitLorem ipsum dolor sit </h2>
+            <input type="range" id="musicRange" min="0" max="100" value=0 onchange="musicSliderChange(this.value)">
+        </div>
+        <div class="controls"> 
+            <img src="main/prev.svg" alt="prev" onclick='prev(this)'>
+            <img src="main/play.svg" alt="play" onclick='palyPause(this)' id="playPauseButton" >
+            <img src="main/next.svg" alt="pause" onclick='next(this)'>
+        </div>
+       
+    </div>
+    <script src="music.js"></script>
+    <div class="time">
+        <h1 class="sec" id="second">00</h1>
+        <h1 class="hm" id="hourMinute">00:00</h1>
+    </div>
+    <p class="sub" id="readingSubject">...</p>
+    <img src="main/musicOff.svg" alt="Music" class="music" id="musicIcon"> 
+    <img src="img/mainLogo.svg" alt="reading" class="mainLogo">
+    <!-- <p class="txt">Tap on the screen to pause timer</p> -->
+    <div class="control">
+        <img src="main/pause.svg" alt="stop" id="readingPlayPause" onclick="stopReading()">
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="d3">
+    <div class="top">
+        <div class="left">
+            <div class="container">
+                <div class="content1"></div>
+                <div class="content2"></div>
+                <div class="content3"></div>
+                <div class="content4"></div>
+                <div class="content5"></div>
+                <div class="content6"></div>
+                <div class="content7"></div>
+                <div class="content8"></div>
+                <div class="content9"></div>
+                <div class="content10"></div>
+            </div>
+        </div>
+        <div class="right">
+            Not completed, This page will release in STUDY 2.0.
+        </div>
+    </div>
+ 
+</div>
+<link rel="stylesheet" href="d3.css">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="d4">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+            <!-- <header>
+                <h1 class="heading">More & Setting...</h1>
+            </header> -->
+            <div class="glass">
+                <h1>study</h1>
+                <p>V 1.2.5 BETA<br>dark rose software</p>
+            </div>
+            <div class="setting">
+                <div class="op" onclick="repeatMusic()">
+                    <img class="l" src="main/music.svg" alt="music">
+                    <p class="center">Repeat Music</p>
+                    <p class="right" id="repeatMusicIndc">ONE</p>
+                </div>
+                <div class="op" onclick="startupMusic();">
+                    <img class="l" src="main/music2.svg" alt="music">
+                    <p class="center">Play Music on Startup</p>
+                    <p class="right" id="startUpMusic">YES</p>    
+                </div>
+                <br>
+                <div class="op" onclick="swdark()">
+                    <img class="l darkic" src="main/sun.svg" alt="music">
+                    <p class="center">Dark Mode</p>
+                    <p class="right darkTextOnOff">OFF</p>
+                </div>
+                <br>
+
+
+                <div class="op" onclick="openPage('more/addSubject.html')">
+                    <img class="l" src="main/plus.svg" alt="music">
+                    <p class="center">Add Custom Subject</p>
+                    <p class="right"></p>
+                    <img src="main/rArrow.svg" class="r" alt="">
+                </div>
+
+                <div class="op" onclick="openPage('more/deleteAll.html')">
+                    <img class="l" src="main/delete.svg" alt="delete">
+                    <p class="center">Delete All Study Data</p>
+                    <p class="right"></p>
+                    <img src="main/rArrow.svg" class="r" alt="">
+                </div>
+
+
+                <br>
+
+
+                <div class="op" onclick="openPage('more/aboutApp&dev.html')">
+                    <img class="l" src="main/about.svg" alt="music">
+                    <p class="center">About developer</p>
+                    <p class="right"></p>
+                    <img src="main/rArrow.svg" class="r" alt="">
+                </div>
+                <a href="mailto: darkrosesoftware@gmail.com?subject=Feedback about Study Application&body=Hello world">
+                <div class="op" >
+                    <img class="l" src="main/feedback.svg" alt="music">
+                    <p class="center">Send Feedback</p>
+                    <p class="right"></p>
+                    <img src="main/rArrow.svg" class="r" alt="">
+                </div>
+                </a>
+                <div class="op">
+                    <img class="l" src="main/backup.svg" alt="music">
+                    <p class="center">Backup & Restore(2.0)</p>
+                    <p class="right"></p>
+                    <img src="main/rArrow.svg" class="r" alt="">
+                </div>
+                
+
+                <div class="op" onclick="openPage('more/checkForUpdate.html')">
+                    <img class="l" src="main/checkForUpdate.svg" alt="music">
+                    <p class="center">Check for update</p>
+                    <p class="right"></p>
+                    <img src="main/rArrow.svg" class="r" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <img class="home" src="main/homeON.svg" alt="home">
+        <img class="book" src="main/book.svg" alt="book">
+        <img class="time" src="main/time.svg" alt="time">
+        <img class="more" src="main/more.svg" alt="more">
+    </footer>
+    
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="d1.css">
+<link rel="stylesheet" href="d2.css">
+<link rel="stylesheet" href="d4.css">
+<script src="main.js"></script>
+<script src="calculation.js"></script>
+</body>
+</html>

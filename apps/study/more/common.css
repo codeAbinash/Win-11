@@ -1,0 +1,82 @@
+html{
+    background: var(--theme-color);
+}
+body{
+    opacity: 0;
+    padding-bottom: 100px;
+    background: var(--theme-color);
+    transition:0.3s transform,0.5s opacity;
+}
+header{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background: var(--glass-back);
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(40px);
+}
+header img{
+    height: 20px;
+    width: auto;
+    padding:0 10px 0 20px;
+    filter: var(--icon-color);
+}
+header h1{
+    font-size: 1.15em;
+    font-family: PR;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    padding-left: 10px;
+}
+.content{
+    padding-top: 70px;
+    width: 100%;
+    height: auto;
+}
+.logo{
+    width: 85%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+.content .appName{
+    text-align: center;
+    font-family: PM;
+    color: var(--sub-text-color);
+    letter-spacing: 2px;
+    padding: 10px;
+    font-size: 2.5em;
+}
+.content .version{
+    text-align: center;
+    font-family: PM;
+    font-size: 1.3em;
+    color: var(--sub-text-color);
+    letter-spacing: 1px;
+
+}
+button{
+    position: fixed;
+    width:60%;
+    margin-left: 20%;
+    bottom: 5%;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-family: PR;
+    transition: 0.1s linear transform;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2) ;
+    font-weight: bold;
+}
+
+button:active{
+    transform: scale(1.03); 
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body onload="loaded()">
+<script src="dark.js"></script>
+<script>
+function loaded(){
+   document.body.style.opacity="1";
+}
+setInterval(() => {
+    if(localStorage.darkVar){
+        document.body.style.setProperty("--theme-color","black");
+    }else{
+        document.body.style.setProperty("--theme-color","white");
+    }
+}, 1000);
+</script>
+
+<style>
+body{
+    opacity: 0;
+}
+</style>
+    <iframe src="main.html" id="if" frameborder="0">
+    </iframe>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background: var(--theme-color); 
+    /* background: white; */
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: var(--theme-color);
+    /*background: white;*/
+}
+iframe{                 
+    height: 100vh;
+    width: 100vw;
+    background: var(--theme-color);
+}
+</style>
+<script src="dark.js"></script>
+<script>
+if(localStorage.isLoggedInStudy){
+    document.getElementById("if").src="main.html";
+}else{
+   document.getElementById("if").src="start.html";
+}
+
+</script>
+</body>
+</html>

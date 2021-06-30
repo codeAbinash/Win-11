@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Windows 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="window">
+        <header>
+            <div class="app">
+                <img src="icons/files.png" class="appIcon">
+                <p>Themes</p>
+            </div>
+            <div class="nav">
+                <img src="icons/cross.png" class="icon press" onclick="maxMin()">
+                <img src="icons/cross.png" class="icon press" onclick="closeWindow()">
+            </div>
+        </header>
+        <iframe src="apps/welcome.html" frameborder="0"></iframe>
+    </div>
+    
+    <div class="start">
+        <div class="title">
+            <p class="name">Pinned</p>
+            <p class="more">All Apps</p>
+        </div>
+        <div class="appDIv">
+            <div class="app"  onclick="openWin('icons/study.png','Study - Android','apps/study/index.html',77,20)">
+                <img src="icons/study.png" alt="" style="border-radius: 50%;">
+                <p>Study</p>
+            </div>
+            <div class="app" onclick="openWin('icons/notes.png','Notes - Android','apps/notes/index.html',77,20)">
+                <img src="icons/notes.png" alt="" >
+                <p>Notes</p>
+            </div>
+            <div class="app" onclick="openWin('icons/english.png','English XII - Android','apps/english/index.html',77,20)">
+                <img src="icons/english.png" alt="" >
+                <p>English XII</p>
+            </div>
+            <div class="app" onclick="openWin('icons/weather.png','Weather - Android','apps/weather/index.html',77,20)">
+                <img src="icons/weather.png" alt="" >
+                <p>Weather</p>
+            </div>
+            <div class="app">
+                <img src="icons/opera.png" alt="" style="border-radius: 50%;">
+                <p>Opera</p>
+            </div>
+            <div class="app">
+                <img src="icons/photoshop.png" >
+                <p>Photoshop</p>
+            </div>
+            <div class="app">
+                <img src="icons/vs.png" alt="" >
+                <p>Vs Code</p>
+            </div>
+            <div class="app">
+                <img src="icons/chrome.png" alt="" style="border-radius: 50%;">
+                <p>Chrome</p>
+            </div>
+            <div class="app">
+                <img src="icons/store.png" alt="">
+                <p>Store</p>
+            </div>
+            <div class="app">
+                <img src="icons/chrome.png" alt="" style="border-radius: 50%;">
+                <p>Chrome</p>
+            </div>
+            <div class="app">
+                <img src="icons/notec.png" alt="" >
+                <p>One Notes</p>
+            </div>
+            <div class="app">
+                <img src="icons/officec.png" alt="">
+                <p>Office</p>
+            </div>
+            <div class="app">
+                <img src="icons/files.png" alt="">
+                <p>Files</p>
+            </div>
+            <div class="app">
+                <img src="icons/opera.png" alt="" style="border-radius: 50%;">
+                <p>Opera</p>
+            </div>
+            <div class="app">
+                <img src="icons/photoshop.png" >
+                <p>Photoshop</p>
+            </div>
+            <div class="app">
+                <img src="icons/vs.png" alt="" >
+                <p>Vs Code</p>
+            </div>
+        </div>
+        <div class="title">
+            <p class="name">Recommended</p>
+            <p class="more">More</p>
+        </div>
+        <div class="recommended">
+            <div class="one press">
+                <img src="icons/notec.png">
+                <p>One Notes <br> Used 5sec Ago</p>
+            </div>
+            <div class="one press">
+                <img src="icons/files.png">
+                <p>Files<br>Recently Added</p>
+            </div>
+            <div class="one press">
+                <img src="icons/officec.png">
+                <p>One Notes <br>Used 34min ago</p>
+            </div>
+            <div class="one press">
+                <img src="icons/photoshop.png">
+                <p>Adobe Photoshop<br>Just Now</p>
+            </div>
+            <div class="one press">
+                <img src="icons/officec.png">
+                <p>One Notes <br>Used 34min ago</p>
+            </div>
+            <div class="one press">
+                <img src="icons/photoshop.png">
+                <p>Adobe Photoshop<br>Just Now</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="name">
+                <img src="img/abinash.png" class="profile">
+                <p>Abinash</p>
+            </div>
+            <img src="icons/power.png" class="icon power">
+        </div>
+    </div>
+    <footer>
+        <img src="icons/win.svg" alt="icon" onclick="swStart()">
+        <img src="icons/study.png" onclick="openWin('icons/study.png','Study - Android','apps/study/index.html',77,20,0)">
+        <img src="icons/notes.png" onclick="openWin('icons/notes.png','Notes - Android','apps/notes/index.html',77,20,0)">
+        <img src="icons/english.png" onclick="openWin('icons/english.png','English XII - Android','apps/english/index.html',77,20,0)">
+        <img src="icons/weather.png" onclick="openWin('icons/weather.png','Weather - Android','apps/weather/index.html',77,20,0)">
+        <img src="icons/files.png" alt="">
+        <img src="icons/notec.png" alt="">
+        <img src="icons/officec.png" alt="">
+        <img src="icons/opera.png" style="border-radius: 50%;">
+        <img src="icons/photoshop.png">
+        <img src="icons/vs.png">
+        <img src="icons/store.png">
+    </footer>
+
+    <script src="start.js"></script>
+    <script src="js/window.js"></script>
+</body>
+</html>

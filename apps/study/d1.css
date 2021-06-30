@@ -1,0 +1,187 @@
+.d1{
+    background: var(--thrme-color);
+    left: 0;
+    background: var(--theme-color);
+    padding-bottom: 150px;
+    position: fixed;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.main .d1 .history{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    height: 25px;
+}
+.main .glass{
+    margin-top: 50px;
+    height:60vw;
+    width: 85vw;
+    background:var(--glass-back);
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #88888822;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .d1 .glass2{
+    height: auto;
+    width: 80vw;
+    margin-left:10vw;
+}
+.main .d1 .glass2 .sub p {
+    padding: 20px 0 10px 0;
+    font-family:PM;
+}
+.main .d1 .glass2 .sub .container{
+    height: 12px;
+    width: 100%;
+    border-radius: 20px;
+}
+.main  .d1 .glass2 .sub .content{
+    width: 70%;
+    height: inherit;
+    border-radius: inherit;
+    width: 0;
+    transition: 0.7s ease-out width;
+}
+ 
+
+
+.main .d1 .glass h2{
+    font-size: 1.5em;
+    color: var(--sub-text-color);
+    font-family: PR;
+    letter-spacing: 1px;
+}
+.main .d1 .glass .todayTime{
+    font-size: 2.2em;
+    color:var(--main-color);
+    padding: 30px 0;
+    font-family: PR;
+    letter-spacing: 2px;
+    filter:var(--main-dark-icon);
+}
+
+.main .d1 .c1{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: linear-gradient(#ff3434,#ff1fff);
+    top: 5vw;
+    right: 1vw;
+    z-index: -5;
+    animation: bubble 10s ease-in-out infinite;
+    animation-delay:-4s; 
+}
+.main .d1 .c2{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to right,rgb(0, 115, 255),rgb(0, 200, 255));
+    top: 30vw;
+    left: -30vw;
+    z-index: -5;
+    animation: bubble 8s ease-in-out infinite;
+    animation-delay:-3s; 
+}
+.main .d1 .c3{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: 27%;
+    left: 50%;
+    background:red;
+    animation: bubble 10s ease-in-out infinite;
+    animation-delay:0s; 
+}
+.main .d1 .c4{
+    height: 50px;
+    width: 50px;
+    background:rgb(0, 235, 145);
+    border-radius: 50%;
+    position: absolute;
+    top: 22vw;
+    left: 18vw;
+    animation: bubble 8s ease-in-out infinite;
+    animation-delay:-6s; 
+}
+.main .d1 .quote{
+    text-align: center;
+    padding:40px  15vw 15px;
+    font-size: 1em;
+    color: var(--sub-text-color);
+    font-family: PM;
+}
+.main .d1 button{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    padding: 15px 27px;
+    background: linear-gradient(45deg,#ff5f6c,#FFC371);
+    color: white;
+    font-size: 1.1em;
+    border-radius: 8px;
+    font-family:PM;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.1s ease-in-out transform;
+}
+.main .d1 button:active{
+    transform: scale(1.05);
+}
+
+.main .d1 .glass2 .sub1 .container,
+.main .d1 .glass2 .sub5 .container,
+.main .d1 .glass2 .sub9 .container
+{
+    background: rgba(0, 235, 145, 0.3);
+}
+.main .d1 .glass2 .sub1 .content,
+.main .d1 .glass2 .sub5 .content,
+.main .d1 .glass2 .sub9 .content
+{
+    background: rgb(0, 235, 145);
+}
+.main .d1 .glass2 .sub2 .container,
+.main .d1 .glass2 .sub6 .container,
+.main .d1 .glass2 .sub10 .container
+{
+    background:linear-gradient(to left,rgba(255, 95, 108, 0.2),rgba(255, 196, 113, 0.2));
+}
+.main .d1 .glass2 .sub2 .content,
+.main .d1 .glass2 .sub6 .content,
+.main .d1 .glass2 .sub10 .content
+{
+    background: linear-gradient(to left,#ff5f6c,#FFC371);
+}
+.main .d1 .glass2 .sub3 .container,
+.main .d1 .glass2 .sub7 .container
+{
+    background: linear-gradient(to right,#a244ff44,#9501ff44);}
+.main .d1 .glass2 .sub3 .content,
+.main .d1 .glass2 .sub7 .content
+{
+    background: linear-gradient(to right,#A044FF,#8b42c0);
+}
+.main .d1 .glass2 .sub4 .container,
+.main .d1 .glass2 .sub8 .container
+{
+    background: linear-gradient(to right,rgba(0, 115, 255, 0.3),rgba(0, 200, 255, 0.3));
+}
+.main .d1 .glass2 .sub4 .content,
+.main .d1 .glass2 .sub8 .content{
+    background: linear-gradient(to left,rgb(0, 115, 255),rgb(0, 200, 255));
+}
+
+

@@ -1,0 +1,51 @@
+
+.grid.one,.grid.two,.grid.three{
+    width: 88%;
+    min-height: 100px;
+    height: auto;
+    display: block;
+    margin:10px auto;
+    border-radius: 10px;
+}
+
+.grid.two{
+    display: flex;
+    justify-content:space-between;
+}
+.grid.two>div{
+    width:calc(50% - 5px);
+    min-height: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+.grid.two>div p{
+    font-family: qsb;
+}
+
+.grid.three{
+    height: 210px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.grid.three>div{
+    width: calc(50% - 5px);
+    height: 100%;
+    border-radius: 10px;
+}
+.grid.three .right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.grid.grid.three .right>div{
+    display: flex;
+    height: 100px;
+    width: calc(100%);
+    border-radius: 10px;
+}
+.b{
+    border: 1px solid var(--grid-border-color);
+}

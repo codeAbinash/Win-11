@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+<div class="main" id="main">
+    <header>
+        <img src="icons/more.svg" alt="more" onclick="$d.openPage('more.html','left',100);">
+        <h1 class="press"><span style="color: var(--color);">mind</span>scapes</h1>
+        <img src="icons/searchBlack.svg" alt="more" onclick="search()">
+    </header>
+    <section>
+        <div class="search">
+            <img src="icons/search.svg" alt="">
+            <input type="search" placeholder="Search Chapter..." onblur="reverseSearch()" onfocus="search()">
+        </div>
+        <p class="littleText">All chapters of class XII are available. By <span style="color: var(--color);"></span><span style="color: var(--color);"><a href="#DarkRose">Abinash Karmakar & Dark Rose Software.</a></span> Some features may not work properly, Because it is in beta verion.</p>
+        <!-- <p class="littleText" style="text-align: center;"><span style="color: var(--color);">Dark Rose Software</span></p> -->
+        <p class="link"> <img src="icons/book.svg" style="height: 13px;"> Read From where you left ?</p>
+        
+        <h1 class="heading center" style="margin-top:30px;">Prose</h1>
+        <!--Books Are bellow-->
+
+        <a href="#TheEyesHaveIt"  onclick="$d.openPage('read.html','no',350);">
+        <div class="bookCard" id="TheEyesHaveIt"  onclick="clicked(this)" >
+            <img src="images/theEyeshaveIt.jpg" alt="The Eyes Have IT">
+            <div class="bottom">
+                <div class="description">
+                    <p class="title">The Eyes have It</p>
+                    <p class="author">Ruskin Bond</p>
+                    <p class="text"> The Eyes Have It, a Heart-beat skipping story by Ruskin Bond.</p>
+                </div>
+                <div class="reaction">
+                    <img src="icons/star.svg" alt="">
+                </div>
+            </div>   
+        </div>
+        </a>
+
+        <a href="#StrongRoots" onclick="$d.openPage('read1.html','no',350);">    
+        <div class="bookCard" id="StrongRoots" onclick="clicked(this);">
+            <img src="images/strongRoots.jpg" alt="Strong Roots">
+            <div class="bottom">
+                <div class="description">
+                    <p class="title">Strong Roots</p>
+                    <p class="author">APJ Abdul kalam</p>
+                    <p class="text">Strong Roots is an extract from Dr. Kalam's autobiography Wings of Fire.</p>
+                </div>
+                <div class="reaction">
+                    <img src="icons/star.svg" alt="">
+                </div>
+            </div>   
+        </div>
+        </a>
+        <a href="#ThankYouMaam" onclick="$d.openPage('read2.html','no',350);">
+        <div class="bookCard" id="ThankYouMaam" name="Thank You Ma'am"  onclick="clicked(this);">
+            <img src="images/thankYouMaam.jpg" alt="Thank You Ma'am">
+            <div class="bottom">
+                <div class="description">
+                    <p class="title">Thank You Ma'am</p>
+                    <p class="author">Langston Hughes</p>
+                    <p class="text">"Thank You, M'am" is a American short story written by Langston Hughes.</p>
+                </div>
+                <div class="reaction">
+                    <img src="icons/star.svg" alt="">
+                </div>
+            </div>   
+        </div>
+        </a>
+        <a href="#ThreeQuestions" onclick="$d.openPage('read3.html','no',350);">
+        <div class="bookCard" id="ThreeQuestions" name="Three Questions" onclick="clicked(this);">
+            <img src="images/threeQuestions.jpg" alt="Three Questions">
+            <div class="bottom">
+                <div class="description">
+                    <p class="title">Three Questions</p>
+                    <p class="author">Leo Tolstoy</p>
+                    <p class="text">What is the right time, who are the right people, and what is the most important thing to do? Revisit Tolstoy's classic short story.</p>
+                </div>
+                <div class="reaction">
+                    <img src="icons/star.svg" alt="">
+                </div>
+            </div>   
+        </div>
+        </a>
+
+        <a href="#onKillingATree" onclick="$d.openPage('read4.html','no',350);">
+        <h1 class="heading center">Poetry</h1>
+        <div class="bookCard" id="onKillingATree" name="On Killing A Tree"  onclick="clicked(this);">
+            <img src="images/onKillingATree.jpg" alt="On Killing A Tree">
+            <div class="bottom">
+                <div class="description">
+                    <p class="title">On Killing A Tree</p>
+                    <p class="author">Gieve Patel</p>
+                    <p class="text">“On Killing a Tree” is a sensitive poem. The poet persuades the reader not to destroy trees and equates it with “killing” a human being.</p>
+                </div>
+                <div class="reaction">
+                    <img src="icons/star.svg" alt="">
+                </div>
+            </div>   
+        </div>
+        </a>
+        <a href="#AsleepInTheValley" onclick="$d.openPage('read5.html','no',350);">
+        <div class="bookCard" id="AsleepInTheValley" name="Asleep In The Valley"  onclick="clicked(this);">
+            <img src="images/asleepInTheValley.jpg" alt="Asleep In The Valley">
+            <div class="bottom">
+                <div class="description">
+                    <p class="title">Asleep In The Valley</p>
+                    <p class="author">Arthur Rimbaud</p>
+                    <p class="text">This particular poem, Asleep In The Valley.</p>
+                </div>
+                <div class="reaction">
+                    <img src="icons/star.svg" alt="">
+                </div>
+            </div>   
+        </div>
+        </a>
+        <a href="#ShallICompareThee"onclick="$d.openPage('read6.html','no',350);">
+        <div class="bookCard" id="ShallICompareThee" name="Shall I Compare Thee" onclick="clicked(this);">
+            <img src="images/shallICompareThee.jpg" alt="Shall I Compare Thee">
+            <div class="bottom">
+                <div class="description">
+                    <p class="title">Shall I Compare Thee</p>
+                    <p class="author">William Shakespeare</p>
+                    <p class="text">Like many of Shakespeare's sonnets, the poem wrestles with the nature of beauty and with the capacity of poetry to represent that beauty.</p>
+                </div>
+                <div class="reaction">
+                    <img src="icons/star.svg" alt="">
+                </div>
+            </div>   
+        </div>    
+        </a>
+        <a href="#ThePoetryOfEarth" onclick="$d.openPage('read7.html','no',350);">
+        <div class="bookCard" id="ThePoetryOfEarth" name="The Poetry OF Earth"  onclick="clicked(this);">
+            <img src="images/poerryOfEarth.jpg" alt="The Poetry OF Earth">
+            <div class="bottom">
+                <div class="description">
+                    <p class="title">The Poetry Of Earth</p>
+                    <p class="author">John Keats</p>
+                    <p class="text">The Poetry of Earth, a Petrarchan sonnet.</p>
+                </div>
+                <div class="reaction">
+                    <img src="icons/star.svg" alt="">
+                </div>
+            </div>   
+        </div>  
+        </a>  
+
+        <a href="#TheProposal" onclick="$d.openPage('read8.html','no',350);">
+        <h1 class="heading center">Drama</h1>
+        <div class="bookCard" id="TheProposal" name="The Proposal" onclick="clicked(this);">
+            <img src="images/theProposal.jpg" alt="The Proposal">
+            <div class="bottom">
+                <div class="description">
+                    <p class="title">The Proposal</p>
+                    <p class="author">Anton Chekhov</p>
+                    <p class="text">A one-act farce by Anton Chekhov.</p>
+                </div>
+                <div class="reaction">
+                    <img src="icons/starNo.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+        </a>
+        <h1 class="appName center"><span style="color: var(--color);">mind</span>scapes</h1>
+
+        <p class="littleText">Developed by the Expert Committee on School Education (School Education Department Government of West Bengal) &#169West Bengal Council Of Higher Secondary Education. <a href="#DarkRose">&#169Dark Rose</a>.</p>
+        <br>
+        
+        <h1 class="heading center">Information</h1>
+
+        <a href="#DarkRose" onclick="$d.openPage('read9.html','no',350);">
+        <div class="bookCard" id="DarkRose" name="Dark Rose" onclick="clicked(this);">
+            <img src="images/rose.jpg" alt="The Proposal">
+            <div class="bottom">
+                <div class="description">
+                    <p class="title">Dark Rose Software</p>
+                    <p class="author">Abinash Karmakar</p>
+                    <p class="text">A software company by Abinash Karmakar.</p>
+                </div>
+                <div class="reaction">
+                    <img src="icons/star.svg" alt="Star">
+                </div>
+            </div>
+        </div>
+        </a>
+        
+
+
+
+
+        <div class="nav">
+            <p class="center press">Clear Search</p>
+            <p class="center press">Search Done</p>
+        </div>
+
+        <div class="grid two">
+            <div class="left b press" id="readLeft">
+                <img src="icons/book.svg" alt="">
+                <h1>Read From</h1>
+                <p>Where you left?</p>
+            </div>
+            <div class="right b press" id="darkSwitch" onclick="applyDarkThemeMain()">
+                <img src="icons/sun.svg" alt="Sun" id="sun"> 
+                <h1>Dark Mode</h1>
+                <p id="darkSwitchText">System Default</p>
+            </div>
+        </div>
+
+        <div class="grid one b press" id="readStatus">
+            <div class="container"></div>
+            <h1>You read 87%</h1>
+        </div>
+
+        <div class="grid three">
+            <div class="left b press" id="profile">
+                <img src="images/cover.png" alt="Abinash">
+                <h1 class="name center">Abinash</h1>
+                <p class="text">Click to go to my facebook profile</p>
+            </div>
+            <div class="right ">
+                <div class="top press b" id="note">
+                    <img src="icons/pencil.svg" alt="">
+                    <h1>Notes</h1>
+                    <p>Take yor notes</p>
+                </div>
+                <div class="bottom b press" id="setting">
+                    <img src="icons/setting.svg">
+                    <h1>Settings</h1>
+                    <p>More Settings</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="center">Beta version</h1>
+    </section>    
+</div>
+
+<script src="window.js"></script>
+<script src="dark.js"></script>
+<script src="common.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+</html>

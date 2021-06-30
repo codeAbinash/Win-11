@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="read.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="jquery.js"></script>
+
+</head>
+<body>
+<div class="main ">
+
+    <header>
+        <div class="backDiv pressS" onclick="$d.openPage('back');">
+            <img src="icons/back.svg" alt="back" >
+        </div>
+
+        <div class="optionsDiv" id="options">
+            <div class="option pressS cursorPoint" onclick="switchFullScreen()">
+                <img src="icons/fullscreenOn.svg" alt="More" style="width: 30%;" id="fullscreen">
+            </div>
+
+            <div class="option pressS cursorPoint">
+                <img src="icons/starBlack.svg" alt="More">
+            </div>
+
+            <div class="option pressS cursorPoint">
+                <img src="icons/language.svg" alt="More">
+            </div>
+            
+            <div class="option pressS cursorPoint" onclick="openFontSettingWindow()">
+                <h3 style="font-size:25px;">A</h3>
+            </div>
+            <div class="option pressS cursorPoint">
+                <img src="icons/pencilBlack.svg" alt="More">
+            </div>
+            <div class="option pressS cursorPoint" onclick="readingMode()">
+                <img src="icons/eye.svg" alt="More">
+            </div>
+            <div class="option pressS cursorPoint" onclick="switchDarkThemeRead()">
+                <img src="icons/sunBlack.svg" alt="More" >
+            </div>
+            <div class="option pressS cursorPoint" onclick="clickedMore()">
+                <img src="icons/3dot.svg" alt="More" id="more">
+            </div>
+        </div>
+
+        <img src="images/onKillingATree.jpg" alt="Chapter image" class="firstImage press">
+        <div class="desc">
+            <h1 class="heading press">On Killing A Tree </h1>
+            <h2 class="center author press">Gieve Patel</h2>
+        </div>
+    </header>
+
+    <div class="textDiv" onclick="clickedMore()">
+        <p class="authDetail"> <span style="color:var(--color);">Gieve Patel </span>(1940-) is a renowned Indian poet playwright and painter. In his poetry, Patel uses a syncopated rhythm. He brings the flavour of everyday's speech in his poetry. Some of his notable works are Mirrored, Mirroring (1991), How do you withstand, body (1976).</p>
+        <p class="authDetail" style="text-indent: 15px;">The poem is about the harm done to the environment by human beings. In a voice of sarcasm and irony, the poet speaks of man's violence and impatience towards nature. The poem is written in free verse.</p>        
+        <br>
+        <div class="mainText">
+            <p class="text">It takes much time to kill a tree,</p>
+            <p class="text">Not a simple jab of the knife</p>
+            <p class="text">Will do it. It has grown</p>
+            <p class="text">Slowly consuming the earth,</p>
+            <p class="text">Rising out of it, feeding</p>
+            <p class="text">Upon its crust, absorbing</p>
+            <p class="text">Years of sunlight, air, water,</p>
+            <p class="text">And out of its leprous hide The phrase</p>
+            <p class="text">Sprouting leaves.</p>
+            <p class="text">So hack and chop  </p>
+            <p class="text">But this alone won't do it.</p>                
+            <p class="text">Not so much pain will do it.</p>
+            <p class="text">The bleeding bark will heal.</p>
+            <p class="text">And from close to the ground</p>
+            <p class="text">Will rise curled green twigs,</p>
+            <p class="text">Miniature boughs</p>
+            <p class="text">Which if unchecked will expand again</p>
+            <p class="text">To former size.</p>
+            <p class="text">No,</p>
+            <p class="text">The root is to be pulled out -</p>
+            <p class="text">Out of the anchoring earth;</p>
+            <p class="text">It is to be roped, tied,</p>
+            <p class="text">And pulled out-snapped out</p>
+            <p class="text">Or pulled out entirely,</p>
+            <p class="text">Out from the earth-cave,</p>
+            <p class="text">And the strength of the tree exposed,</p>
+            <p class="text">The source, white and wet,</p>
+            <p class="text">The most sensitive,hidden</p>
+            <p class="text">For years inside the earth.</p>
+            <p class="text">Then the matter</p>
+            <p class="text">Of scorching and choking</p>
+            <p class="text">In sun and air,</p>
+            <p class="text">Browning, hardening,</p>
+            <p class="text">Twisting, withering,</p>
+            <p class="text">And then it is done.</p>
+        </div>
+    </div>
+    <footer>
+        <h3 class="center">The End</h3>
+        <div class="done press b" style="border-color:rgb(4, 211, 114);">
+            <p>Click to Complete (+10 Points)</p>
+        </div>
+        <!--div class="twoDiv">
+            <div class="left b press aGrid" style="border-color: var(--color);color: var(--color);background-color:rgba(31, 143, 255, 0.15);">
+                <h1>M.C.Q.</h1>
+                <p>Coming Soon</p>
+            </div>
+            <div class="right b press aGrid" style="border-color: orangered;color:orangered;background-color:rgba(255, 68, 0, 0.15);">
+                <h1>S.A.Q.</h1>
+                <p>Coming Soon</p>
+            </div>
+        </div>
+        
+        <div class="oneDiv b press aGrid" style="border-color: rgb(4, 211, 114);color: rgb(4, 211, 114);background-color: rgba(4, 211, 114,0.15);">
+            <h1>Quiz (100 MCQ)</h1>
+            <p>Coming Soon || Complete quiz and get 150 points</p>
+        </div>
+    
+        <div class="threeDiv">
+            <div class="left b press aGrid" >
+                <img src="images/ruskinBond.jpg" alt="Author Name" style="border-radius: 5px;">
+                <h2 style="font-size: 1em;margin-top: 5px;" class="center">Ruskin Bond</h2>
+            </div>
+            <div class="right">
+                <div class="top b press aGrid" style="color:brown;border-color: brown; background-color: rgba(222, 184, 135, 0.2);">
+                    <h1>L.A.Q</h1>
+                    <p>Coming soon</p>
+                </div>
+                <div class="bottom b press aGrid" style="border-color: rgb(4, 211, 114);color: rgb(4, 211, 114);background-color: rgba(4, 211, 114,0.15);">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="twoDiv">
+            <div class="left b press aGrid" style="border-color: deeppink;background-color: rgba(255, 20, 145, 0.1);color: deeppink;">
+                <h1>L.A.Q</h1>
+                <p>Coming soon</p>
+            </div>
+            <div class="right b press aGrid" style="border-color: blueviolet;color: blueviolet;background-color: rgba(137, 43, 226, 0.2);">
+            </div>
+        </div-->
+        <h1 class="center">Beta Version</h1>
+        
+    </footer>
+    <div class="fontWindow">
+        <h1 class="center">Font Settings</h1>
+        <h4>Font Size : </h4>
+        <div class="controls">
+            <div onclick="fontSize('-');" class="cursorPoint">-</div>
+            <div id="fontSize" class="cursorPoint">25</div>
+            <div onclick="fontSize('+');" class="cursorPoint">+</div>
+        </div>
+        <h4 style="margin-bottom: 25px;">Font Width : </h4>
+        <p class="center press cursorPoint" style="font-family: qm;" onclick="applyFont('qm')">Light</p>
+        <p class="center press cursorPoint" style="font-family: qsb;" onclick="applyFont('qsb')">Medium</p>
+        <p class="center press cursorPoint" style="font-family: qb;" onclick="applyFont('qb')">Bold</p>
+        <p class="center press cursorPoint done" style="background-color: var(--color);color: white;border: none;" >Done</p>
+    </div>
+
+
+</div>
+
+
+
+<script src="window.js"></script>
+<script src="dark.js"></script>
+<script src="common.js"></script>
+<script src="read.js"></script>
+
+</body>
+</html>

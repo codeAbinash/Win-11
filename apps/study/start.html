@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to study</title>
+<style>
+@font-face{
+    font-family: PR;
+    src: url("font/PR.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#6c63ff;
+}
+body{
+    height: 100vh;
+    background:white;
+}
+.c{
+    transition: 1s linear opacity;
+    opacity: 0;
+}
+.glass,.c1,.c2,.logo,button{
+    position: fixed;
+}
+.glass{
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    border: 1px solid #88888822;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #555;
+    transition: 2s ease-in-out;
+}
+.glass h1{
+    font-size: 3em;
+    text-transform: uppercase;
+   opacity: 1s opacity;
+   opacity: 0;
+   transition: 2s ease-in-out;
+}
+.glass p{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: PR;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    opacity: 0;
+    transition: 2s ease-in-out;
+    filter:var(--main-dark-icon);
+
+}
+.c1{
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(to left,#FF0000,#FF00FF);
+    border-radius: 50%;
+    top: 50%;
+    left: 40%;
+    z-index: -1;
+    transition: 2s ease-out;
+    opacity: 0;
+}
+.c2{
+    height: 30px;
+    width: 30px;
+    background:linear-gradient(#FF00FF,#6C63FF);
+    opacity: 0;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 2s;
+    transform: translate(-50%,-50%);
+    top: 49%;
+    left:55%;
+    transition: 2s ease-out;
+}
+.logo{
+    width: 80vw;
+    height: auto;
+    margin-left: 10vw;
+    padding-top:50vh;
+    transition: 0.8s linear opacity;
+    opacity: 0;
+}
+button{
+    border:none;
+    outline: none;
+    background: var(--main-color);
+    font-size: 1.1em;
+    padding: 15px 30px;
+    color: white;
+    border-radius:10px;
+    transform: translate(-50%,-50%);
+    top: 90%;
+    left: 50%;
+    font-weight: bold;
+    white-space: pre;
+    font-family: PR;
+    letter-spacing: 2px;
+    transition: 0.8s linear opacity,0.1s linear background;
+    opacity: 0;
+    filter:var(--main-dark-icon);
+    text-transform: uppercase;
+    
+}
+button:active{
+    background: #8881ff;
+}
+</style>
+</head>
+<body>
+   <div class="c">
+    <div class="glass">
+        <h1 class="std">Study</h1>
+        <p class="v">Version 1.2.5</p>
+    </div>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <img class="logo" src="img/mainLogo.svg" alt="not found">
+    <button onclick="start()">Start studying</button>
+   </div>
+</body>
+<script>
+var btn = document.querySelector("button");
+var logo = document.querySelector(".logo");
+var c1 = document.querySelector(".c1");
+var c2 = document.querySelector(".c2");
+var glass = document.querySelector(".glass");
+var std = document.querySelector(".std");
+var v = document.querySelector(".v");
+c1.style.opacity="1";
+c2.style,opacity="1";
+setTimeout(() => {
+    document.querySelector(".c").style.opacity="1";
+},1000);
+setTimeout(function(){
+    btn.style.opacity="1.0";
+    logo.style.opacity="1.0";
+},2000);
+setTimeout(() => {
+    c1.style.height="250px";
+    c1.style.width="250px";
+    c1.style.top = "-10%";
+    c1.style.left="-20%";
+    c2.style.opacity=1.0;
+    c2.style.height="150px";
+    c2.style.width="150px";
+    c2.style.top = "30%";
+    c2.style.left="90%";
+    glass.style.borderRadius = "20px";
+    glass.style.top = "20%";
+    glass.style.height = "60vw";
+    glass.style.width = "85vw"; 
+}, 1000);
+setTimeout(() => {
+    std.style.opacity="1";
+    v.style.opacity="1";
+}, 2000);
+</script>
+<script src="common.js"></script>
+<script>
+function start(){
+    localStorage.isLoggedInStudy = true;
+    openPage("main.html");
+}
+</script>
+</html>

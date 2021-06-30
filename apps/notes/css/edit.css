@@ -1,0 +1,71 @@
+@font-face {
+    font-family: B;
+    src: url("../fonts/Comfortaa-Bold.ttf");
+}
+header{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 10px 0 20px;
+    position: fixed;
+    top: 0;left: 0;
+    background-color: white;
+    z-index: 1000;
+}
+header .options{
+    justify-content: space-between;
+    align-items:center;
+    width: auto;
+    display: flex;
+}
+header .options img{
+    height: 17px;
+    width: auto;
+    opacity: 0.7;
+    margin: 0 12px;
+}
+body{
+    color: black;
+}
+
+section{
+    width: 100%;
+    padding-top: 80px;
+    height: 100vh;
+}
+section .timeContainer{
+    margin-bottom: 20px;
+}
+section .timeContainer .time{
+    font-size: 0.6em;
+    margin: 10px;
+    background-color: #6b63ff11;
+    color: var(--main-color);
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 100px;
+    font-family: B;
+}
+section textarea{
+  /* box-sizing: padding-box; */
+    overflow: auto;
+    height: 50px;
+    width: 100%;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+section textarea#title{
+    font-family: B;
+    font-size: 1.1em;
+    height: 50px;
+}
+section textarea#note{
+    height: calc(100vh - 50px - 75px - 70px);
+    font-size: 1em;
+    font-family: B;
+    line-height: 1.5em;
+}

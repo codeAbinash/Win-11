@@ -1,0 +1,87 @@
+body{
+    background-color:var(--main-theme-color);
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 100%;
+    height: auto;
+}
+header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: qb;
+    margin-bottom: 10px;
+}
+header p{
+    font-size: 1.2em;
+}
+header img{
+    height: 17px;
+    width: auto;
+    padding: 0 10px 0 20px;
+    filter: var(--theme-icon);
+}
+.twoDiv{
+    width: 85%;
+    height: 100px;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.twoDiv>div{
+    height: 100px;
+    width: calc(50% - 5px);
+    border-radius: 10px;
+}
+.oneDiv{
+    height: 100px;
+    width: 85%;
+    display: flex;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.threeDiv{
+    height: auto;
+    width: 85%;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+.threeDiv>div{
+    height: 200px;
+    width: calc(50% - 5px);
+    border-radius: 10px;
+}
+.threeDiv .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.threeDiv .right>div{
+    height: calc(50% - 5px);
+    border-radius: 10px;
+}
+
+
+.b{
+    border: 1px solid var(--sub-text-color2);
+}
+@media screen and (min-width:800px) {
+    .main{
+        width: 800px;
+    }
+    header img{
+    padding: 0 10px 0 0px;
+    }
+    .oneDiv,.threeDiv,.twoDiv{
+        width: 100%;
+    }
+}

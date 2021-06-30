@@ -1,0 +1,55 @@
+@import url("common.css");
+body{
+    background-image: url("../wallpaper/\(3\).webp");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: inherit;
+    background-size: cover;
+}
+.lock{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--blurBg);
+    backdrop-filter: blur(40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color);
+}
+.lock img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.lock h1{
+    font-weight:lighter;
+    font-size: 2.5em;
+    padding:0 0 30px 0; 
+}
+.lock input{
+    border: none;
+    outline: none;
+    width:20%;
+    background-color: #ffffff22;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--color);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.lock button{
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background-color: #ffffff22;
+    color: white;
+    margin-bottom: 50px;
+    border: 1px solid transparent;
+    outline: 2px solid #ffffff55;
+}
+.lock button:active{
+    border: 1px solid #ffffff55;
+}

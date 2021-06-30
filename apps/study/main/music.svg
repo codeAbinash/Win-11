@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.762" x2="0.486" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff416c"/>
+      <stop offset="1" stop-color="#ff2600"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_material-library-music" data-name="Icon material-library-music" d="M25.5,3h-15A2.507,2.507,0,0,0,8,5.5v15A2.507,2.507,0,0,0,10.5,23h15A2.507,2.507,0,0,0,28,20.5V5.5A2.507,2.507,0,0,0,25.5,3ZM23,9.25H19.25v6.875A3.125,3.125,0,1,1,16.125,13,3.059,3.059,0,0,1,18,13.637V6.75h5ZM5.5,8H3V25.5A2.507,2.507,0,0,0,5.5,28H23V25.5H5.5Z" transform="translate(-3 -3)" fill="url(#linear-gradient)"/>
+</svg>

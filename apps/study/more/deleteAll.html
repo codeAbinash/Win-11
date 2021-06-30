@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check For Update</title>
+    <link rel="stylesheet" href="../common.css">
+    <script src="../common.js"></script>
+</head>
+<body onload="loaded()">
+<script>
+    function loaded(){
+        document.body.style.opacity="1";
+    }
+</script>
+
+<style>
+body{
+    opacity: 0;
+    background: var(--theme-color);
+}
+</style>
+    <header>
+        <img src="../main/back.svg" alt="back" onclick="goBack()">
+        <h1>Delete Study Data </h1>
+    </header>
+    <div class="content">
+        <img src="../img/data.svg" class="logo" alt="checkForUpdate">
+        <h1 class="appName" style="color: red;">!</h1>
+        <p class="version" style="text-align: justify;padding:10px 30px;"> You will no longer be able to see old data. Do you really want to clear all your data from your study application?</p>
+        <button onclick="delAllDAta()">Delete All Data</button>
+    </div>
+</body>
+<script src="../dark.js"></script>
+<script>
+function delAllDAta(){
+    localStorage.lastWin="";
+    localStorage.darkVar="";
+    localStorage.isLoggedInStudy="";
+    localStorage.currentMusic="";
+    localStorage.repeatMusic="";
+    localStorage.currentMusicTime = "";
+    localStorage.subjects= "";
+    localStorage.startupMusic = "";
+    localStorage.readingTime = "";
+    localStorage.fullReadingTime  = "";
+    localStorage.isReading = "";
+    localStorage.startedReadingTime = "";
+    localStorage.readingSubjectNumber = "";
+    localStorage.validateToday = "";
+    openPage("../start.html");
+}
+
+</script>
+<link rel="stylesheet" href="common.css">
+</html>

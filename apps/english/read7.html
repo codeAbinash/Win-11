@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="read.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+<div class="main ">
+
+    <header>
+        <div class="backDiv pressS" onclick="$d.openPage('back');">
+            <img src="icons/back.svg" alt="back" >
+        </div>
+
+        <div class="optionsDiv" id="options">
+            <div class="option pressS cursorPoint" onclick="switchFullScreen()">
+                <img src="icons/fullscreenOn.svg" alt="More" style="width: 30%;" id="fullscreen">
+            </div>
+            <div class="option pressS cursorPoint">
+                <img src="icons/starBlack.svg" alt="More">
+            </div>
+            <div class="option pressS cursorPoint">
+                <img src="icons/language.svg" alt="More">
+            </div>
+            <div class="option pressS cursorPoint" onclick="openFontSettingWindow()">
+                <h3 style="font-size:25px;">A</h3>
+            </div>
+            <div class="option pressS cursorPoint">
+                <img src="icons/pencilBlack.svg" alt="More">
+            </div>
+            <div class="option pressS cursorPoint" onclick="readingMode()">
+                <img src="icons/eye.svg" alt="More">
+            </div>
+            <div class="option pressS cursorPoint" onclick="switchDarkThemeRead()">
+                <img src="icons/sunBlack.svg" alt="More" >
+            </div>
+            <div class="option pressS cursorPoint" onclick="clickedMore()">
+                <img src="icons/3dot.svg" alt="More" id="more">
+            </div>
+        </div>
+
+        <img src="images/poerryOfEarth.jpg" alt="Chapter image" class="firstImage press">
+        <div class="desc">
+            <h1 class="heading press" style="padding: 15px;">The Poetry of Earth</h1>
+            <h2 class="center author press">Jhon Keats</h2>
+        </div>
+    </header>
+    <div class="textDiv" onclick="clickedMore()">
+        <p class="authDetail"> <span style="color:var(--color);">John Keats </span>(1795-1821) was a noted poet of the English Romantic Movement. He belonged to the second generation of Romantic poets who came after Coleridge and Wordsworth. He is known for his vivid imagery which are noted for their sensuous appeal. Some of his famous works are Ode to a Nightingale, Hyperion and Isabella.</p>
+        <p class="authDetail" style="text-indent: 15px;">The argument put forward by Keats in this poem is that, the natural music of the earth never ceases to play through the cycle of seasons. The poem is a sonnet in which the song of the grasshopper is embodied in the octave and that of the cricket is portrayed in the sestet.</p>
+        <br>
+
+        <div class="mainText">
+            <p class="text">The poetry of earth is never dead.</p>
+            <p class="text">When all the birds are faint with the hot sun,</p>
+            <p class="text">And hide in cooling trees, a voice will run</p>
+            <p class="text">From hedge to hedge about the new-mown mead;</p>
+            <p class="text">That is the Grasshopper'-he takes the lead</p>
+            <p class="text">In summer luxury, - he has never done</p>
+            <p class="text">With his delights; for when tired out with fun</p>
+            <p class="text">He rests at ease beneath some pleasant weed.</p>
+            <p class="text">The poetry of earth is ceasing never:</p>
+            <p class="text">On a lone winter evening, when the frost</p>
+            <p class="text">Has wrought a silence, from the stove there shrills</p>
+            <p class="text">The Cricket's song, in warmth increasing ever,</p>
+            <p class="text">And seems to one in drowsiness half lost,</p>
+            <p class="text">The Grasshopper's among some grassy hills.</p>
+        </div>
+    </div>
+    <footer>
+        <h3 class="center">The End</h3>
+        <div class="done press b" style="border-color:rgb(4, 211, 114);">
+            <p>Click to Complete (+10 Points)</p>
+        </div>
+        <!--div class="twoDiv">
+            <div class="left b press aGrid" style="border-color: var(--color);color: var(--color);background-color:rgba(31, 143, 255, 0.15);">
+                <h1>M.C.Q.</h1>
+                <p>Coming Soon</p>
+            </div>
+            <div class="right b press aGrid" style="border-color: orangered;color:orangered;background-color:rgba(255, 68, 0, 0.15);">
+                <h1>S.A.Q.</h1>
+                <p>Coming Soon</p>
+            </div>
+        </div>
+        
+        <div class="oneDiv b press aGrid" style="border-color: rgb(4, 211, 114);color: rgb(4, 211, 114);background-color: rgba(4, 211, 114,0.15);">
+            <h1>Quiz (100 MCQ)</h1>
+            <p>Coming Soon || Complete quiz and get 150 points</p>
+        </div>
+    
+        <div class="threeDiv">
+            <div class="left b press aGrid" >
+                <img src="images/ruskinBond.jpg" alt="Author Name" style="border-radius: 5px;">
+                <h2 style="font-size: 1em;margin-top: 5px;" class="center">Ruskin Bond</h2>
+            </div>
+            <div class="right">
+                <div class="top b press aGrid" style="color:brown;border-color: brown; background-color: rgba(222, 184, 135, 0.2);">
+                    <h1>L.A.Q</h1>
+                    <p>Coming soon</p>
+                </div>
+                <div class="bottom b press aGrid" style="border-color: rgb(4, 211, 114);color: rgb(4, 211, 114);background-color: rgba(4, 211, 114,0.15);">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="twoDiv">
+            <div class="left b press aGrid" style="border-color: deeppink;background-color: rgba(255, 20, 145, 0.1);color: deeppink;">
+                <h1>L.A.Q</h1>
+                <p>Coming soon</p>
+            </div>
+            <div class="right b press aGrid" style="border-color: blueviolet;color: blueviolet;background-color: rgba(137, 43, 226, 0.2);">
+            </div>
+        </div-->
+        <h1 class="center">Beta Version</h1>
+        
+    </footer>
+    <div class="fontWindow">
+        <h1 class="center">Font Settings</h1>
+        <h4>Font Size : </h4>
+        <div class="controls">
+            <div onclick="fontSize('-');" class="cursorPoint">-</div>
+            <div id="fontSize" class="cursorPoint">25</div>
+            <div onclick="fontSize('+');" class="cursorPoint">+</div>
+        </div>
+        <h4 style="margin-bottom: 25px;">Font Width : </h4>
+        <p class="center press cursorPoint" style="font-family: qm;" onclick="applyFont('qm')">Light</p>
+        <p class="center press cursorPoint" style="font-family: qsb;" onclick="applyFont('qsb')">Medium</p>
+        <p class="center press cursorPoint" style="font-family: qb;" onclick="applyFont('qb')">Bold</p>
+        <p class="center press cursorPoint done" style="background-color: var(--color);color: white;border: none;" >Done</p>
+    </div>
+
+
+</div>
+
+
+
+<script src="window.js"></script>
+<script src="dark.js"></script>
+<script src="common.js"></script>
+<script src="read.js"></script>
+
+</body>
+</html>
+

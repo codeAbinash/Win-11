@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" onload="loaded()">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1e90ff">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="dark.css">
+    <title>English XII</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    height:100vh;
+    width: 100vw;
+    background-color: var(--main-theme-color);
+    border: none;
+    outline: none;
+}
+
+</style>
+</head>
+<body>
+<iframe src="main.html" frameborder="0"></iframe>
+<script src="common.js"></script>
+<script src="dark.js"></script>
+<script>
+
+function checkDarkTheme(){
+    var currentTheme = localStorage.darkModeEnabledMindScapes;
+    if(currentTheme=="Light Mode")
+        applyLightTheme();
+    else if(currentTheme=="Dark Mode")
+        applyDarkTheme();
+    else if(currentTheme=="System Default"){
+        if(window.matchMedia('(prefers-color-scheme: dark)').matches)
+            applyDarkTheme();
+        else
+            applyLightTheme();
+    }
+    setTimeout(() => {
+        checkDarkTheme();
+    }, 1000);
+}
+checkDarkTheme();
+</script>
+</body>
+</html>

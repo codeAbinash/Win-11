@@ -1,0 +1,51 @@
+.d3 .top{
+    height: 70vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.d3 .top .left{
+    height:inherit;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d3 .top .left .container{
+    height: inherit;
+    width: 75%;
+    background: pink;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.d3 .top .left .container div{
+    width: 100%;
+    height: 7vh;
+    background: lime;
+}
+.d3 .top .left .container div:nth-child(1){
+    background: #00FF9F;
+}.d3 .top .left .container div:nth-child(2){
+    background: #FFC371;
+}.d3 .top .left .container div:nth-child(3){
+    background: #A044FF;
+}.d3 .top .left .container div:nth-child(4){
+    background:#2FB0FF;
+}.d3 .top .left .container div:nth-child(5){
+    background: #FF2600;
+}.d3 .top .left .container div:nth-child(6){
+    background: #FFC371;
+}.d3 .top .left .container div:nth-child(7){
+    background: #A044FF;
+}.d3 .top .left .container div:nth-child(8){
+    background: #00FF9F;
+}.d3 .top .left .container div:nth-child(9){
+    background: #FFC371;
+}.d3 .top .left .container div:nth-child(10){
+    background: #2FB0FF;
+}
+.d3 .top .right{
+    height:inherit;
+    width: 50%;
+}

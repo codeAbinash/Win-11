@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/important.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/edit.css">
+
+    <title>Edit</title>
+</head>
+<body onload="loaded()">
+<div class="main">
+<header>
+    <img src="img/back.svg" alt="Back" class="presss" onclick="$d.openPage('back')">
+    <div class="options">
+        <img src="img/delete.svg" alt="" class="presss" onclick="confirmDelete()">
+        <img src="img/justify.svg" alt="" class="presss" onclick="setAlignment('justify')">
+        <img src="img/center.svg" alt="" class="presss" onclick="setAlignment('center')">
+        <img src="img/left.svg" alt="" class="presss" onclick="setAlignment('left')">
+        <img src="img/right.svg" alt="" class="presss" onclick="setAlignment('right')">
+        <img src="img/done.svg" alt="" onclick="$d.openPage('back');">
+    </div>
+</header>
+<section>
+    <div class="timeContainer">
+        <span class="time" id="details"></span>
+    </div>
+    <textarea id="title" placeholder="Title " oninput="input()"></textarea>
+    <textarea id="note" placeholder="Write your note here..." oninput="input()"></textarea>
+   
+</section>
+</div>
+</body>
+<script src="js/important.js"></script>
+<script src="js/edit.js"></script>
+<script src="js/note.js"></script>
+</html>

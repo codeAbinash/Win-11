@@ -1,0 +1,44 @@
+@font-face {
+    font-family: B;
+    src: url("../fonts/Comfortaa-Bold.ttf");
+}
+.heading{
+    padding-top: 50px;
+    color:#444;
+}
+body{
+    height: 100%;
+    width: 100vw;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    padding: 15px 0;
+}
+.logo{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.start{
+    display: block;
+    margin: auto;
+    min-width: 75%;
+    color: white;
+    background-color: #6C63FF;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-family: B;
+    padding: 17px;
+    border-radius: 5px;
+    text-transform: capitalize
+}
+.txt{
+    font-size: 0.6em;
+    font-family: B;
+}
+

@@ -1,0 +1,205 @@
+@import url("css/common.css");
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("wallpaper/\(3\).webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 45px;
+    background-color: var(--blurBg);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    height: 65%;
+    transition: 0.1s linear transform;
+    margin: 0 10px;
+}
+footer img:hover{
+    transform: scale(1.05);
+}
+footer img:active{
+    transform: scale(0.9);
+}
+
+.start{
+    height: auto;
+    width: 40vw;
+    left: 30vw;
+    background-color: var(--blurBg);
+    backdrop-filter: blur(40px);
+    position: fixed;
+    /* bottom: 60px; */
+    bottom: -80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #00000011;
+    transition: 0.13s linear bottom;
+    padding: 40px;
+    z-index: 100000;
+}
+.start .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-t);
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+.start .title .more{
+    background-color: var(--blurBg-b);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+.start .appDIv{
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    /* background-color: var(--blurBg-b); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.start .appDIv .app{
+    height: auto;
+    width: auto;
+    /* background-color: lime; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 17px;
+    transition: 0.1s linear transform;
+}
+.start .appDIv .app:active{
+    transform: scale(0.9);
+}
+.start .appDIv .app img{
+    height: 40px;
+    width: 40px;
+}
+.start .appDIv .app p{
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    color: var(--color-t);
+}
+
+.start .recommended{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 12px 0;
+}
+.start .recommended .one{
+    width: 47%;
+    height: 80px;
+    /* background-color: var(--blurBg-b); */
+    margin: 0px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.start .recommended .one img{
+    margin-left: 10px;
+    height: 40px;
+}
+.start .recommended .one p{
+    color: var(--color-t);
+    margin-left: 10px;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+}
+.start .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    /* background-color: #00000011; */
+    border-radius: 10px;
+}
+.start .bottom .name .profile{
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.start .bottom .name{
+    display: flex;
+    align-items: center
+}
+.start .bottom .name p{
+    color: var(--color-t);
+    letter-spacing: 0.5px;
+}
+.start .bottom .power{
+    height: 20px;
+    margin-right: 20px;
+}
+#window{
+    position: fixed;
+    height: 60vh;
+    width:50vw;
+    background-color:VAR(--blurBg);
+    backdrop-filter: blur(20px);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 8px;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.07s linear height,0.07s linear width;
+    z-index: 1000;
+}
+#window header{
+    height: 30px;
+    background-color: var(--blurBg-b);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-t);
+}
+#window header .app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#window header .app .appIcon{
+    height: 20px;
+}
+#window header .app p{
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
+}
+#window header .nav{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#window header .nav img{
+    height: 16px;
+    margin: 0 5px;
+}
+#window iframe{
+    height: calc(100% - 30px);
+    width: 100%;
+}

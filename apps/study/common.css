@@ -1,0 +1,39 @@
+
+html{
+    background: var(--theme-color);
+}
+::-webkit-scrollbar-track{
+    width: 0;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    transition:0.3s transform,0.5s opacity;
+    background: var(--theme-color);
+    opacity: 0;
+}
+
+@font-face{
+    font-family: PR;
+    src: url("font/PR.ttf");
+}
+@font-face{
+    font-family: PM;
+    src: url("font/PM.ttf");
+}
+@font-face{
+    font-family: PL;
+    src: url("font/PL.ttf");
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}

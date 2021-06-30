@@ -1,0 +1,342 @@
+
+body{
+    margin-bottom: 100px;
+    /* transform: translateX(-90vw) translateY(90vh); */
+    transition: 0.3s transform;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-text-color);
+    background-color: var(--main-theme-color);
+    
+}
+header{
+    height:65px;
+    width: 100%;
+    background-color: var(--main-theme-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px;
+    position: sticky;
+    top:-0.5px;
+    background-color: var(--backdrop-light2);
+    backdrop-filter:blur(20px);
+    z-index:1000;
+    transition: 0.1s linear top;
+}
+header h1{
+    font-size: 2em;
+    color: var(--main-text-color);
+}
+header img{
+    width: 23px;
+    height: auto;
+    height: auto;
+    transition: 0.1s ease-in-out transform;
+    background-color: transparent;
+    filter: var(--theme-icon);
+}
+header img:active{
+    transform: scale(1.3);
+    /*box-shadow: 0px 0px 100px 100px #ddd;*/
+}
+section{
+    height: auto;
+    width: 100%;
+}
+section .search{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: -70px;
+    background-color: var(--backdrop);
+    backdrop-filter: blur(10px);
+    transition: 0.1s linear top;
+}
+section .search input[type=search]{
+    border: none;
+    outline: none;
+    width: 88%; 
+    font-size: 0.95em;
+    padding: 15px 15px 15px calc(15px + 1.1em + 8px);
+    box-shadow: 0px 1px 8px 0px var(--shadow-color);
+    margin: 10px 0 10px 0;
+    border-radius:100px;
+    background-color: var(--backdrop);
+    font-family: qsb;
+    color: var(--main-text-color);
+    /* border: 1px solid var(--grid-border-color); */
+
+}
+section .search input[type=search]::-webkit-search-cancel-button{
+    /* position:relative;
+    right:20px;   */
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius:10px;
+    background:url("icons/cross.svg") no-repeat center;
+}  
+::placeholder{
+    color: var(--sub-text-color2);
+}
+section .search img{
+    position: absolute;
+    left:calc(6% + 15px);
+    height:1.1em;
+    width: auto;
+}
+section .option{
+    width: 88%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content:space-between;
+    align-items: center;
+    color: var(--main-text-color);
+    border: 1px solid transparent;
+    border-top-color: var(--sub-text-color2);
+    border-bottom-color: var(--sub-text-color2);
+}
+section .link{
+    margin-left: 6%;
+    padding: 12px 18px;
+    background-color: rgba(30, 143, 255, 0.15);
+    display: inline-block;
+    color: var(--color);
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: qb;
+    transition: 0.2s transform;
+}
+section .link:active{
+    transform: scale(0.95);
+}
+section .appName{
+    font-size:10vw;
+    margin-top: 60px;
+    color: var(--main-text-color);
+}
+section .heading{
+    margin: 50px 0 10px 0;
+    color:var(--main-text-color);
+}
+section .littleText{
+    padding:0 calc(6% + 5px);
+    text-align: justify;
+    font-size: 0.8em;
+    color: var(--sub-text-color);
+    font-family: qsb;
+}
+section .bookCard{
+    height: 200px;
+    width: 88%;
+    display: block;
+    margin:25px auto 25px auto;
+    background-color: var(--card-color);
+    height: auto;
+    min-height: 50px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 8px 5px var(--shadow-color-light);
+    overflow: hidden;
+    transition: 0.4s height,0.4s width,0.4s opacity,0.4s top;
+}
+section .bookCard:active{
+    transform: scale(0.95);
+}
+section .bookCard img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+section .bookCard .bottom{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .bookCard .description{
+    width:85%;
+    height: auto;
+}
+section .bookCard .title{
+    font-size: 1.15em;
+    font-family: qsb;
+    color: var(--main-text-color);
+    padding: 5px 0 0 15px;
+}
+section .bookCard .author{
+    font-size: 0.8em;
+    padding: 0 0 2px 15px;
+    font-family: qsb;
+    color: var(--color);
+}
+section .bookCard .text{
+    padding: 0 0 20px 15px;
+    font-size: 0.8em;
+    color: var(--sub-text-color);
+    font-family: qm;
+}
+section .bookCard .reaction{
+    width:15%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section .bookCard .reaction img{
+    height:20px;
+    width: auto;
+}
+section .nav{
+    position: fixed;
+    bottom: -61px;
+    height: 60px;
+    width: 100%;
+    background-color: var(--color);
+    color: white;
+    font-family: qsb;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.1s linear bottom;
+}
+section #readLeft{
+    background-color: rgba(30, 143, 255, 0.1);
+    border-color: var(--color);
+    color: var(--color);
+}
+section #darkSwitch{
+    padding-left: 10px;
+    color: var(--main-text-color);
+    background-color: black;
+}
+section #darkSwitch h1{
+    color: #ffe259;
+}
+section #darkSwitch p{
+    font-family: qsb;
+    color:white;
+}
+section #profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 17px;
+    /* background-color: rgba(30, 143, 255, 0.1); */
+    /* border-color: var(--color); */
+}
+section #profile .name{
+    font-size: 1.5em;
+}
+section #profile img{
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+section #profile .text{
+    font-family: qsb;
+    color: var(--sub-text-color);
+    font-size: 0.8em;
+    text-align: center;
+}
+section #readStatus{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-color: rgb(4, 211, 114);
+
+}
+section #readStatus .container{
+    height: 98px;
+    width:83%;
+    background-color: rgba(4, 211, 114,0.25);
+}
+section #readStatus h1{
+    position: absolute;
+    text-align:center;
+    color: var(--main-theme-color);
+    color: rgb(4, 211, 114);
+    transform: translateX(-50%);
+    left: 50%;
+}
+section #note{
+    background-color: rgb(138, 43, 226,0.15);
+    border-color:blueviolet;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+    padding: 10px;
+    color: black;
+    color: blueviolet;
+}
+section #note{
+    font-family: qb;
+}
+section #note img{
+    height: 25px;
+    width: auto;
+}
+section #setting{
+    background-color: rgba(255, 69, 0,0.15);
+    border-color: orangered;
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    color: orangered;
+}
+section #setting img{
+    height: 25px;
+}
+section #setting p{
+    font-family: qb;
+}
+/* @media screen and (min-width: 900px) {
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+} */
+
+@media screen and (min-width: 900px) {
+    /*::-webkit-scrollbar {
+        width: 7px;
+    }*/
+    section .bookCard{
+        cursor: pointer;
+    }
+    header img{
+        cursor: pointer;
+    }
+    header h1{
+        cursor: pointer;
+    }
+    section .link{
+        cursor: pointer;
+    }
+    section .appName{
+        cursor: pointer;
+    }
+    .main{
+        width: 900px;
+    }
+    section .appName{
+        font-size:90px;
+    }
+    section #readStatus h1{
+        width:900px;
+    }
+}
+

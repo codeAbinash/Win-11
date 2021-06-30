@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About developer</title>
+    <link rel="stylesheet" href="../common.css">
+    <script src="../common.js"></script>
+</head>
+<body onload="loaded()">
+<script>
+    function loaded(){
+        document.body.style.opacity="1";
+    }
+</script>
+
+<style>
+body{
+    opacity: 0;
+    background: var(--theme-color);
+}
+</style>
+    <header>
+        <img src="../main/back.svg" alt="back" onclick="addSubjects()">
+        <h1>About developer</h1>
+    </header>
+    <div class="content">
+        <img src="../img/subjectS.svg" class="logo" alt="checkForUpdate" id="bg">
+
+        <h1 class="appName" style="color:var(--main-color)">Add Subject</h1>
+        <p style="text-align: justify;" class="version">Subject Limit is 10. Add your subject Typing the name in the text boxes. If you want to add more subject, go for pro version.</p>
+        
+       
+
+    </div>
+    <input type="text" name="" id="sub1" class="sub" value="Mathematics" placeholder="Subject 1"> 
+    <input type="text" name="" id="sub2" class="sub" placeholder="Subject 1"> 
+    <input type="text" name="" id="sub3" class="sub" placeholder="Subject 2"> 
+    <input type="text" name="" id="sub4" class="sub" placeholder="Subject 3"> 
+    <input type="text" name="" id="sub5" class="sub" placeholder="Subject 4"> 
+    <input type="text" name="" id="sub6" class="sub" placeholder="Subject 5"> 
+    <input type="text" name="" id="sub7" class="sub" placeholder="Subject 6"> 
+    <input type="text" name="" id="sub8" class="sub" placeholder="Subject 7"> 
+    <input type="text" name="" id="sub9" class="sub" placeholder="Subject 9"> 
+    <input type="text" name="" id="sub10" class="sub" placeholder="Subject 10"> 
+ <button id="add" onclick="addSubjects()">Add Subjects</button>
+</body>
+<style>
+#bg{
+    width: 50%;
+    border-radius: 10px;
+    margin-top:50px;
+}
+.version{
+    padding: 20px;
+}
+.sub{
+    width: 95%;
+    display: flex;
+    font-family: PR;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px;
+    margin: 5px auto;
+    outline: none;
+    border: 1px solid var(--sub-text-color);
+    transition: 0.1s linear border;
+    border-radius: 10px;
+    color: var(--main-color);
+    background: transparent;
+}
+.sub:focus{
+    border-color:var(--main-color);
+}
+#add{
+    position: relative;
+    margin: 20px 20%;
+}
+</style>
+<script src="../dark.js"></script>
+<link rel="stylesheet" href="common.css">
+<script>
+var subjects = JSON.parse(localStorage.subjects);
+for(i=0;i<subjects.length;i++){
+    if(subjects[i]){
+        document.getElementById("sub" + (1+i)).value = subjects[i];
+    }
+}
+
+
+
+
+
+function addSubjects(){
+    for(i=0;i<10;i++){
+        subjects[i] = document.getElementById("sub" + (i+1)).value;
+    }
+
+    localStorage.subjects = JSON.stringify(subjects);
+    localStorage.lastWin="home";
+    goBack();
+}
+</script>
+</html>

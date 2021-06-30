@@ -1,0 +1,289 @@
+
+body{
+    color: var(--main-text-color);
+    background-color: var(--main-theme-color);
+}
+.main{
+    width: 100vw;
+    height: auto;
+    z-index:1005;
+}
+.readingMode{
+    box-shadow: 0 0 0 100000px rgba(255, 217, 0, 0.178) inset;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+header .backDiv{
+    height: 50px;
+    width: 50px;
+    background-color: var(--backdrop-light);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 0px #99999955;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 15px;
+    z-index:1000;
+}
+header .backDiv{
+    left: 15px;
+}
+
+
+header .backDiv:hover{
+    filter: brightness(0.8);
+}
+header .backDiv img{
+    filter:var(--theme-icon);
+    width:45%;
+}
+header .optionsDiv{
+    height: calc(400px + 140px); /*  50*8  + 20*7*/
+    width: 50px;
+    position: fixed;
+    background-color: transparent;
+    /*top:px;*//*-250px - 80px + 15px + 47px*/
+    /* top: 15px; */
+    top:calc(-400px - 140px + 15px + 50px);
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease-out top;
+    z-index:1000;
+    max-height: 100vh;
+    overflow: show;
+}
+header .optionsDiv .option{
+    height: 50px;
+    width: 50px;
+    background-color: var(--backdrop-light);
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px 0px #99999955;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+header .optionsDiv .option img{
+    filter: var(--theme-icon);
+    width: 45%;
+}
+#more{
+    transition: 0.4s linear transform;
+}
+
+
+header .firstImage{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin:0 auto 0px auto;
+}
+header .heading{
+    text-align: center;
+    margin: 30px auto 0px auto;
+}
+header .author{
+    color: var(--color);
+    margin: 0px auto 15px auto;
+}
+
+.textDiv{
+    padding: 17px;
+}
+.textDiv .authDetail{
+    text-align: justify;
+    font-size: 1em;
+    margin: 10px auto;
+    color: var(--main-text-color);
+}
+/* .textDiv .mainText:first-child::first-letter{
+    color: blue;
+    
+} */
+.textDiv .mainText .text{
+    font-size: 1.05em;
+    text-indent: 20px;
+    text-align: justify;
+    margin: 20px auto;
+}
+footer{
+    height: auto;
+    width: 100%;
+    padding: 17px;
+}
+footer .done{
+    height: auto;
+    width:100%;
+    background-color: rgba(4, 211, 114,0.15);
+    display: flex;
+    margin:15px auto;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(4, 211, 114);
+    font-family: qsb;
+    padding: 20px;
+}
+
+.twoDiv{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.twoDiv>div{
+    height: 100px;
+    width: calc(50% - 5px);
+    border-radius: 10px;
+}
+.oneDiv{
+    height: 100px;
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+.threeDiv{
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+.threeDiv>div{
+    height: 200px;
+    width: calc(50% - 5px);
+    border-radius: 10px;
+}
+.threeDiv .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.threeDiv .right>div{
+    height: calc(50% - 5px);
+    border-radius: 10px;
+}
+.aGrid{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.aGrid h1{
+    font-size: 1.5em;
+}
+.aGrid p{
+    font-family: qsb;
+}
+.b{
+    border: 1px solid var(--sub-text-color2);
+}
+
+
+
+.fontWindow{
+    height: auto;
+    width: 85vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: var(--backdrop);
+    backdrop-filter:blur(15px);
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 20px;
+    border: 0.1px solid var(--sub-text-color);
+    display: none;
+
+}
+.fontWindow h1{
+    font-size: 1.3em;
+}
+.fontWindow .controls{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.fontWindow .controls div{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.fontWindow .controls div:active{
+    background-color: var(--sub-text-color2);
+}
+.fontWindow p{
+    padding: 15px;
+    margin: 5px;
+    font-family: qsb;
+    border: 1px solid var(--sub-text-color);
+    border-radius: 5px;
+}
+.cursorPoint{
+    cursor: default;
+}
+
+@media screen and (min-width: 800px) {
+    header{
+        flex-direction: row;
+    }
+    header .firstImage{
+        width: 50%;
+    }
+    header .desc{
+        width: 50%;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    .textDiv{
+        margin: 50px;
+    }
+    .textDiv .authDetail{
+        font-size: 1.6em;
+        font-family: qsb;
+    }
+    .textDiv .mainText .text{
+        font-size: 1.7em;
+    }
+    footer{
+        width: 800px;
+        display: block;
+        margin: auto;
+    }
+    .fontWindow{
+        width: 500px;
+    }
+    .cursorPoint{
+        cursor: pointer;
+    }
+}
